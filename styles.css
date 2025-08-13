@@ -1,0 +1,134 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #f9f6f1;
+    color: #3e3e3e;
+}
+
+header {
+    background-color: #fffdf9;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e0d8c3;
+}
+
+header img {
+    max-width: 280px;
+}
+
+nav {
+    background-color: #b4975a;
+    border-radius: 25px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0.5rem 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover {
+    color: #daf701;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(rgba(0,0,0,0.3
+    ), rgba(0,0,0,0.3)), url(images/img-hero.jpg) center/cover no-repeat;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.main p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card h3 {
+    color: #b4975a;
+}
+
+.card a {
+    color: #b4975a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2rem;
+    background-color: #b4975a;
+    color: #fff;
+    padding: 1.5rem 2rem;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    text-align: left;
+}
+
+.footer-details p {
+    text-align: right;
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+}
